@@ -33,7 +33,7 @@ model.fc = nn.Sequential(
 )  # Binary classification, output layer with 1 neuron
 
 # Load the saved model
-model_path = r"C:\Users\AMIT PAREEK\Downloads\sapling.pth"  # Path to the saved model
+model_path = "sapling.pth"  # Path to the saved model
 model.load_state_dict(torch.load(model_path, map_location=torch.device('cpu')))
 model.eval()
 
